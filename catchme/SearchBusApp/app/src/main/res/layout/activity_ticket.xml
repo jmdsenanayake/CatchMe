@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".conductor.TicketActivity"
+    android:background="#ffff02">
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/origin"
+        android:hint="Origin"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/destination"
+        android:hint="Destination"
+        android:layout_below="@+id/origin"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:id="@+id/btnVal7"
+        android:background="#000000"
+        android:textColor="#ffff04"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="62dp"
+        android:focusableInTouchMode="true"
+        android:textSize="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/destination" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:id="@+id/btnVal8"
+        android:background="#000000"
+        android:textColor="#ffff04"
+        android:focusableInTouchMode="true"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/btnVal7"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:id="@+id/btnVal9"
+        android:background="#000000"
+        android:textColor="#ffff04"
+        android:focusableInTouchMode="true"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/btnVal8"
+        android:layout_alignRight="@+id/ticketFees"
+        android:layout_alignEnd="@+id/ticketFees" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:id="@+id/btnVal4"
+        android:background="#000000"
+        android:textColor="#ffff04"
+        android:focusableInTouchMode="true"
+        android:textSize="30dp"
+        android:layout_below="@+id/btnVal7"
+        android:layout_alignLeft="@+id/btnVal7"
+        android:layout_alignStart="@+id/btnVal7"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:id="@+id/btnVal6"
+        android:background="#000000"
+        android:textColor="#ffff04"
+        android:focusableInTouchMode="true"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/btnVal4"
+        android:layout_alignLeft="@+id/btnVal9"
+        android:layout_alignStart="@+id/btnVal9" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:id="@+id/btnVal1"
+        android:background="#000000"
+        android:textColor="#ffff04"
+        android:focusableInTouchMode="true"
+        android:textSize="30dp"
+        android:layout_below="@+id/btnVal4"
+        android:layout_alignLeft="@+id/btnVal4"
+        android:layout_alignStart="@+id/btnVal4"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:id="@+id/btnVal2"
+        android:background="#000000"
+        android:textColor="#ffff04"
+        android:focusableInTouchMode="true"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/btnVal1"
+        android:layout_alignLeft="@+id/btnVal5"
+        android:layout_alignStart="@+id/btnVal5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:id="@+id/btnVal3"
+        android:background="#000000"
+        android:textColor="#ffff04"
+        android:focusableInTouchMode="true"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/btnVal2"
+        android:layout_alignLeft="@+id/btnVal6"
+        android:layout_alignStart="@+id/btnVal6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/btnVal0"
+        android:background="#000000"
+        android:textColor="#ffff04"
+        android:focusableInTouchMode="true"
+        android:textSize="30dp"
+        android:layout_below="@+id/btnVal1"
+        android:layout_alignLeft="@+id/btnVal1"
+        android:layout_alignStart="@+id/btnVal1"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:id="@+id/button15"
+        android:onClick="addTicket"
+        android:background="#000000"
+        android:textColor="#ffff04"
+        android:focusableInTouchMode="true"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/btnVal0"
+        android:layout_alignLeft="@+id/btnVal2"
+        android:layout_alignStart="@+id/btnVal2"
+        android:layout_alignRight="@+id/btnVal3"
+        android:layout_alignEnd="@+id/btnVal3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:id="@+id/btnVal5"
+        android:background="#000000"
+        android:textColor="#ffff04"
+        android:focusableInTouchMode="true"
+        android:textSize="30dp"
+        android:layout_above="@+id/btnVal1"
+        android:layout_alignLeft="@+id/btnVal8"
+        android:layout_alignStart="@+id/btnVal8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rs. 0"
+        android:id="@+id/ticketFees"
+        android:layout_above="@+id/btnVal8"
+        android:layout_marginBottom="10dp"
+        android:textSize="40dp"
+        android:layout_alignLeft="@+id/btnVal7"
+        android:layout_alignStart="@+id/btnVal7"
+        android:layout_alignRight="@+id/destination"
+        android:layout_alignEnd="@+id/destination"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Start Journey"
+        android:id="@+id/btnStart"
+        android:onClick="onClick"
+        android:background="#0d9d00"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/progressBar"
+        android:layout_toLeftOf="@+id/progressBar" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="End Journey"
+        android:id="@+id/btnStop"
+        android:onClick="onStop"
+        android:background="#c63200"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/btnStart"
+        android:layout_alignRight="@+id/button15"
+        android:layout_alignEnd="@+id/button15"
+        android:layout_toRightOf="@+id/progressBar"
+        android:layout_toEndOf="@+id/progressBar" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:layout_alignTop="@+id/btnStop"
+        android:layout_alignLeft="@+id/button15"
+        android:layout_alignStart="@+id/button15"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bus Value -"
+        android:id="@+id/textView3"
+        android:layout_alignLeft="@+id/btnVal0"
+        android:layout_alignStart="@+id/btnVal0"
+        android:textSize="40dp"
+        android:layout_alignTop="@+id/busValue"
+        android:layout_above="@+id/btnStart" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rs. 0"
+        android:id="@+id/busValue"
+        android:textSize="45dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/button15"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_alignRight="@+id/ticketFees"
+        android:layout_alignEnd="@+id/ticketFees"
+        android:layout_above="@+id/btnStop" />
+
+</RelativeLayout>
