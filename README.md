@@ -6,3 +6,5 @@ In catch_me directory all the required php files for the catchme mobile app are 
 catchMe/SearchBusApp contains the application files of the android application of catchme.
 
 catchmedashboard must be put in your web server http location to get the working dashboard.
+
+Status: Currently updating.
