@@ -5,6 +5,7 @@ package myprojects.catchme.other;
  */
 public class Settings
 {
-    public static String SERVER_URL = "http://192.168.43.109/catch_me";
+    //public static String SERVER_URL = "http://192.168.43.109/catch_me";
+    public static String SERVER_URL = "http://www.catchme.esy.es/catch_me";
     public static String GOOGLE_API_KEY = "AIzaSyDet1YrzCcfcj-2kIG7Hd0ndIksAEMzhBc";
 }

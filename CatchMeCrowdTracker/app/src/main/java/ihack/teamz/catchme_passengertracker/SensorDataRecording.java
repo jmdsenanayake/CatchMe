@@ -31,7 +31,8 @@ public class SensorDataRecording extends AsyncTask<String,Void,String> {
     @Override
     protected String doInBackground(String... params) {
         String type=params[0];
-        String addUser_URL="http://192.168.43.109/catch_me/sensorData.php";
+        //String addUser_URL="http://192.168.43.109/catch_me/sensorData.php";
+        String addUser_URL="http://www.catchme.esy.es/catch_me/sensorData.php";
         if(type.equals("addSensorData")){
             try {
                 String busNo=params[1];
